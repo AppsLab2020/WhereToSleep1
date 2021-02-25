@@ -3,12 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WhereToSleep.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to WhereToSleep!" HorizontalTextAlignment="Center" TextColor="Black" FontSize="40"/>
-        </Frame>
-        
-        </Label>
-    </StackLayout>
+
 
 </ContentPage>
