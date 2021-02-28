@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhereToSleep.buttons_sc">
+    <ContentPage.Content>
+
+        <StackLayout  Spacing="10" Margin="40,120,40,30">
+            <Button Text="Search" BackgroundColor="CadetBlue" TextColor="Gray" CornerRadius="10" WidthRequest="100">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="baseline_search_black_18dp.png"
+                        />
+                     
+                </Button.Image>
+            </Button>
+            <Grid>
+                <Button Text="Check-in" BackgroundColor="CadetBlue" TextColor="Gray" HorizontalOptions="Start" CornerRadius="10" WidthRequest="150">
+                </Button>
+                
+                <Button Text="Check-out" BackgroundColor="CadetBlue" TextColor="Gray" HorizontalOptions="End" VerticalOptions="End" CornerRadius="10" WidthRequest="150" Grid.Column="1">
+                </Button>
+            </Grid>
+
+            <Button Text="Rooms for" BackgroundColor="CadetBlue" TextColor="Gray" HorizontalOptions="Fill"  CornerRadius="10" WidthRequest="150" VerticalOptions="Center">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="baseline_people_black_18dp.png"
+                        />
+
+                </Button.Image>
+            </Button>
+            <Grid>
+                <Image Source="navigacia.png" WidthRequest="120" HorizontalOptions="Center" VerticalOptions="Start" ></Image>
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
