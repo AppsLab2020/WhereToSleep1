@@ -1,4 +1,5 @@
 WhereToSleep
+
 Uvodna obrazovka (splash screen)
 
 navigacia hore (mapy, oblubene miesta...)
