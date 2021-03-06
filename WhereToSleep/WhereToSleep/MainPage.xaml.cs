@@ -14,5 +14,10 @@ namespace WhereToSleep
         {
             InitializeComponent();
         }
+
+        private void navig_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new Map();
+        }
     }
 }

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace WhereToSleep
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class buttons_sc : ContentPage
+    public partial class Map : ContentPage
     {
-        public buttons_sc()
+        public Map()
         {
             InitializeComponent();
         }

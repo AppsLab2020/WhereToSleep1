@@ -2,7 +2,59 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WhereToSleep.MainPage">
+    <ContentPage.Content>
+
+        <StackLayout  Spacing="10" Margin="0">
+
+            <Grid>
+                <Image Source="header.png" WidthRequest="360" HorizontalOptions="Start" VerticalOptions="Start" ></Image>
+            </Grid>
+
+            <Button Text="Search" BackgroundColor="#B5EEF5" TextColor="White" CornerRadius="10" WidthRequest="100" Margin="15,2,15,2">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="baseline_search_black_18dp.png"
+                        />
+
+                </Button.Image>
+
+            </Button>
+
+            <Grid>
+                <Button Text="Check-in" BackgroundColor="#B5EEF5" TextColor="White" HorizontalOptions="Start" CornerRadius="10" WidthRequest="160" Margin="15,2,0,2">
+                </Button>
+
+                <Button Text="Check-out" BackgroundColor="#B5EEF5" TextColor="White" HorizontalOptions="End" VerticalOptions="End" CornerRadius="10" WidthRequest="160" Grid.Column="1" Margin="0,2,15,2">
+                </Button>
+            </Grid>
+
+            <Button Text="Rooms for" BackgroundColor="#B5EEF5" TextColor="White" HorizontalOptions="Fill"  CornerRadius="10" WidthRequest="150" VerticalOptions="Center" Margin="15,2,15,2" Padding="5,0,25,0">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="baseline_people_black_18dp.png"
+                        />
+
+                </Button.Image>
+
+            </Button>
+
+            <Grid>
+
+                <ImageButton Source="navigacia.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    WidthRequest="120"
+                    BackgroundColor="#B5EEF5"
+                    CornerRadius="10"
+                    Clicked="navig_Clicked"/>
+            </Grid>
 
 
 
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
 </ContentPage>

@@ -10,7 +10,7 @@ namespace WhereToSleep
         {
             InitializeComponent();
 
-            MainPage = new buttons_sc();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
