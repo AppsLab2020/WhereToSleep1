@@ -9,7 +9,7 @@
                 <Image Source="map_header.png" WidthRequest="360" HorizontalOptions="Start" VerticalOptions="Start" ></Image>
             </Grid>
 
-            <Label Text="map page!!!!"
+            <Label Text="this is the map page!!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
