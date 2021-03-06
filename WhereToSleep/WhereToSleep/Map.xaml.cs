@@ -16,5 +16,10 @@ namespace WhereToSleep
         {
             InitializeComponent();
         }
+
+        private void backbtn_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
     }
 }
