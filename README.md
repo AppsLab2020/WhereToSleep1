@@ -4,7 +4,8 @@ Je to aplikacia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na pre
 - Uvodna obrazovka (splash screen)
 - navigacia dole (úvod, mapy, obľúbene miesta ...)
 - menu na poziadavky - jednotlive kategorie ktore moze zakaznik zaskrtnut ak ich chce (wifi/ lokacia/ nazov/ jedlo/ cena/ lokacia GPS/ bazen/ parkovisko...)
-#Buttony#
+
+# Buttony #
 - vyhladavanie (search) s ikonkou lupy, po vyhladani hotela nam ukaze jeho  popis / hodnotenie/ komentare/ cennik)
 - Check in- den kedy prideme a zarezervujeme si hotel (datum)
 - Check out- den kedy odchadzame (datum)
