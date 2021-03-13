@@ -19,5 +19,13 @@ namespace WhereToSleep
         {
             App.Current.MainPage = new Map();
         }
+
+
+        SearchBar searchBar = new SearchBar 
+        { 
+            Placeholder = "Search items..." 
+        };
+
+
     }
 }

@@ -10,16 +10,19 @@
                 <Image Source="header.png" WidthRequest="360" HorizontalOptions="Start" VerticalOptions="Start" ></Image>
             </Grid>
 
-            <Button Text="Search" BackgroundColor="#B5EEF5" TextColor="Black" CornerRadius="10" WidthRequest="100" Margin="15,2,15,2" Padding="5,0,25,0">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="search.png"
-                        />
-
-                </Button.Image>
-
-            </Button>
-
+         
+            
+            <SearchBar Placeholder="Search"
+                       CancelButtonColor="Black"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       TextTransform="Lowercase"
+                       BackgroundColor="#B5EEF5"
+                       WidthRequest="100" 
+                       Margin="15,2,15,2"
+                       HorizontalTextAlignment="Center"
+            />
+            
             <Grid>
                 <Button Text="Check-in" BackgroundColor="#B5EEF5" TextColor="Black" HorizontalOptions="Start" CornerRadius="10" WidthRequest="160" Margin="15,2,0,2">
                 </Button>
@@ -37,6 +40,24 @@
                 </Button.Image>
 
             </Button>
+
+
+            <Grid>
+            <Button Text="Search" 
+                        BackgroundColor="#77D5E1"
+                        TextColor="Black" 
+                        HorizontalOptions="Fill" 
+                        CornerRadius="10"
+                        WidthRequest="160" 
+                        VerticalOptions="Center"
+                        Padding="25,0,25,0"
+                        Margin="15,2,15,2" />
+                
+            </Grid>
+
+
+
+
 
             <Grid>
 
