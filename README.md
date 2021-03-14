@@ -21,7 +21,7 @@ Je to aplikacia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na pre
 
 
 # Prvé demo 15.3.2021
-Do prvého dema chceme mať funkčnú splash screen, potom vizualizáciu appky, pridanú mapu a navigáciu v spodnej lište. Na úvodnej obrazovke buttony a funkčnosť aspoň jedného z nich.
+Do prvého dema chceme mať funkčnú splash screen, potom vizualizáciu appky, pridanú mapu a Flyout vľavo hore. Na úvodnej obrazovke buttony a funkčnosť aspoň jedného z nich.
 
 hlavna musi byt funkcnost mapy/ GPS/ pinov
 
