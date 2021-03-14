@@ -1,35 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WhereToSleep.Map">
+             x:Class="WhereToSleep.Map"
+             >
     <ContentPage.Content>
-        
-        <StackLayout>
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ContentView x:Name="Lista" Grid.Row="1"/>
+            <Image Source="map_header1.png" HorizontalOptions="Fill" VerticalOptions="Fill" Aspect="AspectFit"/>
+            
+            
             
             <Grid>
-                <Image Source="map_header.png" WidthRequest="360" HorizontalOptions="Start" VerticalOptions="Start" ></Image>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="42"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+
+
+                <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                    <Image Source="sipka.png" WidthRequest="24" Margin="10,10,0,0" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SipkaTapped" />
+                    </StackLayout.GestureRecognizers>
+
+                </StackLayout>
+
+                <Image Source="logowts.png" Grid.Column="1" HorizontalOptions="Center" WidthRequest="100" Margin="0,10,0,0" />
+
+                <StackLayout Grid.Column="2" HorizontalOptions="Center">
+                    <Image Source="menu.png" WidthRequest="24" Margin="0,10,10,0" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MenuTapped" />
+                    </StackLayout.GestureRecognizers>
+
+                </StackLayout>
+
             </Grid>
 
-            <Grid>
-                <ImageButton Source="Vector.png"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"
-                    WidthRequest="20"
-                    HeightRequest="20"
-                    BackgroundColor="#85D5EE"
-                    Clicked="backbtn_Clicked"
-                    Margin="10,10,0,0"
-                />
-            </Grid>
+           
 
 
 
-            <Label Text="this is the map page!!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"/>
+        </Grid>
 
-          
+        
 
-        </StackLayout>
+
     </ContentPage.Content>
+
 </ContentPage>

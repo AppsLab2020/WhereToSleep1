@@ -10,6 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace WhereToSleep
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+
     public partial class Map : ContentPage
     {
         public Map()
@@ -17,7 +18,11 @@ namespace WhereToSleep
             InitializeComponent();
         }
 
-        private void backbtn_Clicked(object sender, EventArgs e)
+        void SipkaTapped(object sender, System.EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
+        void MenuTapped(object sender, System.EventArgs e)
         {
             App.Current.MainPage = new MainPage();
         }
