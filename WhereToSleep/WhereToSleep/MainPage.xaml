@@ -17,39 +17,42 @@
                        PlaceholderColor="Black"
                        TextColor="Black"
                        TextTransform="Lowercase"
-                       BackgroundColor="#B5EEF5"
                        WidthRequest="100" 
                        Margin="15,2,15,2"
                        HorizontalTextAlignment="Center"
             />
-            
-            
+
+            <Grid>  
               
                 <DatePicker x:Name="startDatePicker"
-                    Format="D"
-                    Margin="30, 0, 0, 30"
-                    DateSelected="OnDateSelected" />
+                    Format="dd.MM.yyyy"
+                    Margin="15,2,15,2"
+                    DateSelected="OnDateSelected"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="100"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
                 
                 <DatePicker x:Name="endDatePicker"
                     MinimumDate="{Binding Source={x:Reference startDatePicker},
                                           Path=Date}"
-                    Format="D"
-                    Margin="30, 0, 0, 30"
-                    DateSelected="OnDateSelected" />
+                    Format="dd.MM.yyyy"
+                    Margin="15,2,15,2"
+                    DateSelected="OnDateSelected"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="100"
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+             
+            </Grid>
 
-                <StackLayout Orientation="Horizontal"
-                     Margin="0, 0, 0, 30">
-                    <Label Text="Include both days in total: "
-                   VerticalOptions="Center" />
-                    <Switch x:Name="includeSwitch"
-                    Toggled="OnSwitchToggled" />
-                </StackLayout>
+            <Label x:Name="resultLabel"
+               FontAttributes="Italic"
+               FontSize="10"
+               HorizontalTextAlignment="Center"
+               WidthRequest="100"
+               />
 
-                <Label x:Name="resultLabel"
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center" />
-                
-           
 
             <Button Text="Rooms for" BackgroundColor="#B5EEF5" 
                     TextColor="Black" HorizontalOptions="Fill"
@@ -86,7 +89,7 @@
                 <ImageButton Source="navigacia.png"
                     HorizontalOptions="Fill"
                     VerticalOptions="Start"
-                    WidthRequest="180"
+                    WidthRequest="150"
                     BackgroundColor="#B5EEF5"
                     CornerRadius="10"
                     Clicked="navig_Clicked"
