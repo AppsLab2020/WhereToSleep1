@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WhereToSleep.MainPage">
-    <ContentPage.Content>
+    <AbsoluteLayout>
 
         <StackLayout  Spacing="10" Margin="0">
 
@@ -23,15 +23,41 @@
                        HorizontalTextAlignment="Center"
             />
             
-            <Grid>
-                <Button Text="Check-in" BackgroundColor="#B5EEF5" TextColor="Black" HorizontalOptions="Start" CornerRadius="10" WidthRequest="160" Margin="15,2,0,2">
-                </Button>
+            
+              
+                <DatePicker x:Name="startDatePicker"
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                    DateSelected="OnDateSelected" />
+                
+                <DatePicker x:Name="endDatePicker"
+                    MinimumDate="{Binding Source={x:Reference startDatePicker},
+                                          Path=Date}"
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                    DateSelected="OnDateSelected" />
 
-                <Button Text="Check-out" BackgroundColor="#B5EEF5" TextColor="Black" HorizontalOptions="End" VerticalOptions="End" CornerRadius="10" WidthRequest="160" Grid.Column="1" Margin="0,2,15,2">
-                </Button>
-            </Grid>
+                <StackLayout Orientation="Horizontal"
+                     Margin="0, 0, 0, 30">
+                    <Label Text="Include both days in total: "
+                   VerticalOptions="Center" />
+                    <Switch x:Name="includeSwitch"
+                    Toggled="OnSwitchToggled" />
+                </StackLayout>
 
-            <Button Text="Rooms for" BackgroundColor="#B5EEF5" TextColor="Black" HorizontalOptions="Fill"  CornerRadius="10" WidthRequest="150" VerticalOptions="Center" Margin="15,2,15,2" Padding="5,0,25,0">
+                <Label x:Name="resultLabel"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+                
+           
+
+            <Button Text="Rooms for" BackgroundColor="#B5EEF5" 
+                    TextColor="Black" HorizontalOptions="Fill"
+                    CornerRadius="10" WidthRequest="150" 
+                    VerticalOptions="Center" 
+                    Margin="15,2,15,2" 
+                    Padding="5,0,25,0" 
+                    Clicked="OnButtonClicked">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
                         Android="baseline_people_black_18dp.png"
@@ -68,12 +94,83 @@
                     Margin="15,2,15,2"/>
             </Grid>
 
-
-
-
-
-
         </StackLayout>
+        
+        <ContentView x:Name="overlay"
+                 AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                 AbsoluteLayout.LayoutFlags="All"
+                 IsVisible="False"
+                 Padding="10, 0" BackgroundColor="#B2B5EEF5">
 
-    </ContentPage.Content>
+           <Frame CornerRadius="15" 
+           HorizontalOptions="Center" 
+           VerticalOptions="Start"
+           HasShadow="True"
+           IsClippedToBounds="True"
+           Padding="0"
+           Margin="0,70,0,0">
+            <StackLayout Orientation="Vertical" 
+                   BackgroundColor="White" 
+                   HeightRequest="220" 
+                   WidthRequest="300" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="0,10,0,0" >
+
+                <Entry x:Name="Rooms" 
+               Placeholder="Rooms" 
+               TextColor="Black" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" 
+               WidthRequest="250" />
+
+                <Entry x:Name="Adults" 
+               Placeholder="Adults" 
+               TextColor="Black" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" 
+               WidthRequest="250" />
+
+                <Entry x:Name="Children" 
+               Placeholder="Children" 
+               TextColor="Black" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" 
+               WidthRequest="250" />
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                    <Button Text="Cancel" FontSize="Large"
+                      VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="Center"
+                      Clicked="OnCancelButtonClicked"
+                      BackgroundColor="#77D5E1"
+                      TextColor="Black" 
+                      CornerRadius="10"
+                      WidthRequest="130"       
+                      Padding="10,0,10,0"
+                      Margin="10,1,10,10" />
+
+                    <Button Text="OK" FontSize="Large"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="Center"
+                        Clicked="OnOKButtonClicked"
+                        BackgroundColor="#77D5E1"
+                        TextColor="Black" 
+                        CornerRadius="10"
+                        WidthRequest="80" 
+                        Padding="10,0,10,0"
+                        Margin="10,1,10,10" />
+                </StackLayout>
+
+                </StackLayout>
+                
+            </Frame>
+
+
+        </ContentView>
+
+
+    </AbsoluteLayout>
 </ContentPage>

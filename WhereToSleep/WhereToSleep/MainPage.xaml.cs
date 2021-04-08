@@ -26,6 +26,44 @@ namespace WhereToSleep
             Placeholder = "Search items..." 
         };
 
+        void OnButtonClicked(object sender, EventArgs args)
+        {
+            overlay.IsVisible = true;
+        }
+     
+
+        void OnOKButtonClicked(object sender, EventArgs args)
+        {
+            overlay.IsVisible = false;             
+        }
+
+        void OnCancelButtonClicked(object sender, EventArgs args)
+        {
+            overlay.IsVisible = false;
+        }
+
+        void OnDateSelected(object sender, DateChangedEventArgs args)
+        {
+            Recalculate();
+        }
+
+        void OnSwitchToggled(object sender, ToggledEventArgs args)
+        {
+            Recalculate();
+        }
+
+
+        void Recalculate()
+        {
+            TimeSpan timeSpan = endDatePicker.Date - startDatePicker.Date +
+                (includeSwitch.IsToggled ? TimeSpan.FromDays(1) : TimeSpan.Zero);
+
+            resultLabel.Text = String.Format("{0} day{1} between dates",
+                                                timeSpan.Days, timeSpan.Days == 1 ? "" : "s");
+        }
+
+
+
 
     }
 }
