@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace WhereToSleep
+namespace WhereToSleep.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 
@@ -18,13 +18,6 @@ namespace WhereToSleep
             InitializeComponent();
         }
 
-        void SipkaTapped(object sender, System.EventArgs e)
-        {
-            App.Current.MainPage = new MainPage();
-        }
-        void MenuTapped(object sender, System.EventArgs e)
-        {
-            App.Current.MainPage = new MainPage();
-        }
+      
     }
 }

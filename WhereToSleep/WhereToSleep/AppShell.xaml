@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell       xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:WhereToSleep.Views"
+             x:Class="WhereToSleep.AppShell">
+
+    <FlyoutItem Title="MainPage"
+                Icon="home_icon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="MapPage"
+                Icon="map_icon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Map}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="FavoritesPage"
+                Icon="favorite_icon.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:FavoritesPage}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>

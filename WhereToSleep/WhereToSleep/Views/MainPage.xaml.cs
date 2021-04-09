@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace WhereToSleep
+namespace WhereToSleep.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -15,10 +15,7 @@ namespace WhereToSleep
             InitializeComponent();
         }
 
-        private void navig_Clicked(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new Map();
-        }
+       
 
 
         SearchBar searchBar = new SearchBar 

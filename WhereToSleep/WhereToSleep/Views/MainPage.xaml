@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WhereToSleep.MainPage">
+             x:Class="WhereToSleep.Views.MainPage">
     <AbsoluteLayout>
 
         <StackLayout  Spacing="10" Margin="0">
@@ -92,7 +92,7 @@
                     WidthRequest="150"
                     BackgroundColor="#B5EEF5"
                     CornerRadius="10"
-                    Clicked="navig_Clicked"
+                   
                     Padding="25,0,25,0"
                     Margin="15,2,15,2"/>
             </Grid>
