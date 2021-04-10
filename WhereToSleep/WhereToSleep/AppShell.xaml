@@ -1,11 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell       xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:local="clr-namespace:WhereToSleep.Views"
+             xmlns:local="clr-namespace:WhereToSleep.Views"
+             Shell.BackgroundColor="#85d5ee"
              x:Class="WhereToSleep.AppShell">
 
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid 
+                  HeightRequest="200">
+                <Image Aspect="AspectFill"
+                       Source="FlyoutHeader2.png"
+                       Opacity="1" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
     <FlyoutItem Title="MainPage"
-                Icon="home_icon.png"
+                Icon="home_icon2.png"
                 Route="MainPage">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
@@ -13,7 +25,7 @@
     </FlyoutItem>
 
     <FlyoutItem Title="MapPage"
-                Icon="map_icon.png"
+                Icon="map_icon3.png"
                 Route="MapPage">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
@@ -21,7 +33,7 @@
     </FlyoutItem>
 
     <FlyoutItem Title="FavoritesPage"
-                Icon="favorite_icon.png"
+                Icon="favourite_icon2.png"
                 Route="FavoritesPage">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:FavoritesPage}" />

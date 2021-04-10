@@ -83,10 +83,7 @@
                         Margin="15,2,15,2" />
                 
             </Grid>
-
-                <Label Text="Navigacia">
-                    
-                </Label>
+               
                 <ImageButton Source="navigacia.png"
                     HorizontalOptions="Fill"
                     VerticalOptions="Start"
@@ -97,9 +94,8 @@
                     Padding="25,0,25,0"
                     Margin="15,2,15,2"/>             
                 
-
-
         </StackLayout>
+        
         
         <ContentView x:Name="overlay"
                  AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
