@@ -16,8 +16,12 @@ namespace WhereToSleep.Views
         public MapPage()
         {
             InitializeComponent();
+            GetPermissons(); 
         }
-
+        private async void GetPermissons()
+        {
+            
+        }
       
     }
 }
