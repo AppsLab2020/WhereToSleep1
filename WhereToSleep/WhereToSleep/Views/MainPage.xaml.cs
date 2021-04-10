@@ -15,8 +15,10 @@ namespace WhereToSleep.Views
             InitializeComponent();
         }
 
-       
-
+        private void navig_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new Map(); 
+        }
 
         SearchBar searchBar = new SearchBar 
         { 
@@ -58,8 +60,6 @@ namespace WhereToSleep.Views
                                                 timeSpan.Days, timeSpan.Days == 1 ? "" : "s");
         }
 
-
-
-
+      
     }
 }

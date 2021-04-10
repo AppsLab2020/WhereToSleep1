@@ -92,7 +92,7 @@
                     WidthRequest="150"
                     BackgroundColor="#B5EEF5"
                     CornerRadius="10"
-                   
+                    Clicked="navig_Clicked"
                     Padding="25,0,25,0"
                     Margin="15,2,15,2"/>
             </Grid>
