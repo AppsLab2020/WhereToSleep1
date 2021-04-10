@@ -14,7 +14,8 @@ namespace WhereToSleep
         public AppShell()
         {
             InitializeComponent();
-           
+
         }
+      
     }
 }

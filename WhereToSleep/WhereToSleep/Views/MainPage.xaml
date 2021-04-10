@@ -84,8 +84,9 @@
                 
             </Grid>
 
-            <Grid>
-
+                <Label Text="Navigacia">
+                    
+                </Label>
                 <ImageButton Source="navigacia.png"
                     HorizontalOptions="Fill"
                     VerticalOptions="Start"
@@ -94,8 +95,9 @@
                     CornerRadius="10"
                     Clicked="navig_Clicked"
                     Padding="25,0,25,0"
-                    Margin="15,2,15,2"/>
-            </Grid>
+                    Margin="15,2,15,2"/>             
+                
+
 
         </StackLayout>
         
