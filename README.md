@@ -12,7 +12,7 @@ Je to aplikácia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na pr
 
 - Main Page kde je vlastne úvod aplikácie. 
 
-- Flyout na ktorom je vidno jeho design a Page na ktore sa mozme cezeň dostať. 
+- Flyout na ktorom je vidno jeho design a Page, na ktoré sa môžeme cezeň dostať. 
 
 - Map Page, kde je Page s mapou. 
 
