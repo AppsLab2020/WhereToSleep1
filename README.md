@@ -5,8 +5,7 @@ Je to aplikácia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na pr
 
 # Screeny
 ![splashscreen2](https://user-images.githubusercontent.com/71751430/111030096-ced71280-8400-11eb-9b28-c9b79df06074.png) ![mainpage](https://user-images.githubusercontent.com/71751430/114319263-0d9bdd80-9b11-11eb-969e-27acd6ec06cc.png) ![flyout](https://user-images.githubusercontent.com/71751430/114319171-9108ff00-9b10-11eb-9cdd-80458de10372.png)![map](https://user-images.githubusercontent.com/71751430/114319344-5bb0e100-9b11-11eb-9450-02864f260e26.png)
-![image](https://user-images.githubusercontent.com/71751172/114321417-011c8280-9b1b-11eb-9243-8df913641eaa.png)
-
+![image](https://user-images.githubusercontent.com/71751172/114321456-25785f00-9b1b-11eb-8180-f21cf02efe07.png)
 
 
 - Úvodná obrazovka(splash screen)
