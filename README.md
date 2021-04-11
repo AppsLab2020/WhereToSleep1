@@ -16,6 +16,8 @@ Je to aplikácia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na pr
 
 - Map Page, kde je Page s mapou. 
 
+- Exit box - proti nechcenému vypnutiu aplikácie
+
 - Zatiaľ nedorobené - Menu na požiadavky - jednotlivé kategórie, ktoré môže zákazník zaškrtnúť ak ich chce (wifi/ lokácia/ názov/ jedlo/ cena/ lokácia GPS/ bazén/ parkovisko...)
 
 # Buttony 
