@@ -1,10 +1,11 @@
 # WhereToSleep
 
 ## Popis aplikácie 
-Je to aplikacia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na prespanie. Môžeme si to vyhľadať buď pomocou hľadania (search), alebo pomocou funkcie NearME, pomocou GPS. Táto aplikácia má hlavne ukazovať okolité hotely za pomoci GPS... Ukáže ceny hotelov, hodnotenie, komentráre, rôzne názory iných ľudí a podobne. Táto apllikácia je naprogramovaná v jazyku C# za pomoci Xamarin.Forms. 
+Je to aplikácia, pomocou ktorej si mozme vyhľadať rôzne hotely, miesta na prespanie. Môžeme si to vyhľadať buď pomocou hľadania (search), alebo pomocou funkcie NearME, pomocou GPS. Táto aplikácia má hlavne ukazovať okolité hotely za pomoci GPS... Ukáže ceny hotelov, hodnotenie, komentráre, rôzne názory iných ľudí a podobne. Táto apllikácia je naprogramovaná v jazyku C# za pomoci Xamarin.Forms. 
 
 # Screeny
 ![splashscreen2](https://user-images.githubusercontent.com/71751430/111030096-ced71280-8400-11eb-9b28-c9b79df06074.png) ![mainpage](https://user-images.githubusercontent.com/71751430/114319263-0d9bdd80-9b11-11eb-969e-27acd6ec06cc.png) ![flyout](https://user-images.githubusercontent.com/71751430/114319171-9108ff00-9b10-11eb-9cdd-80458de10372.png)![map](https://user-images.githubusercontent.com/71751430/114319344-5bb0e100-9b11-11eb-9450-02864f260e26.png)
+[exitbox] https://cdn.discordapp.com/attachments/772934476148768818/830910274583265310/20210411_224832.jpg
 
 - Úvodná obrazovka(splash screen)
 
