@@ -24,6 +24,17 @@ namespace WhereToSleep.Views
         { 
             Placeholder = "Search items..." 
         };
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var exit = await this.DisplayAlert("Please confirm ", "Do you really want to exit the application?", "Yes", "No").ConfigureAwait(false);
+
+                if (exit)
+                    System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+            });
+            return true;
+        }
 
         void OnButtonClicked(object sender, EventArgs args)
         {
