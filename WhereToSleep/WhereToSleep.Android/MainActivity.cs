@@ -39,5 +39,7 @@ namespace WhereToSleep.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+        
+       
     }
 }

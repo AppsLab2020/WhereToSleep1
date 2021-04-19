@@ -15,11 +15,12 @@ namespace WhereToSleep.Views
 
     public partial class MapPage : ContentPage
     {
+       
         public MapPage()
         {
             InitializeComponent();
 
-            GetPermissons(); 
+            GetPermissons();
         }
         private async void GetPermissons()
         {
@@ -52,6 +53,21 @@ namespace WhereToSleep.Views
                 DisplayAlert("Error", ex.Message, "OK");
             }
         }
-        
+
+
+        private void SatelliteButton_Clicked(object sender, EventArgs e)
+        {
+            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Satellite;
+        }
+
+        private void StandardButton_Clicked(object sender, EventArgs e)
+        {
+            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Street;
+        }
+
+        private void HybridButton_Clicked(object sender, EventArgs e)
+        {
+            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Hybrid;
+        }
     }
 }
