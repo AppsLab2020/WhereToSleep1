@@ -47,27 +47,30 @@ namespace WhereToSleep.Views
                 {
                     await DisplayAlert("We need your location", "We need to access your location", "OK");
                 }
-           }
+            }
             catch(Exception ex)
             {
                 DisplayAlert("Error", ex.Message, "OK");
             }
         }
 
-
-        private void SatelliteButton_Clicked(object sender, EventArgs e)
+        private async void MapTypeButton_Clicked(object sender, EventArgs e)
         {
-            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Satellite;
-        }
+            string action = await DisplayActionSheet("Select Map Type", "Cancel", null, "Hybrid", "Satellite", "Standard");
+            switch (action)
+            {
+                case "Hybrid":
+                    LocationMap.MapType = Xamarin.Forms.Maps.MapType.Hybrid;
+                    break;
+                case "Satellite":
+                    LocationMap.MapType = Xamarin.Forms.Maps.MapType.Satellite;
+                    break;
+                case "Standard":
+                    LocationMap.MapType = Xamarin.Forms.Maps.MapType.Street;
+                    break;
+            }
+                
 
-        private void StandardButton_Clicked(object sender, EventArgs e)
-        {
-            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Street;
-        }
-
-        private void HybridButton_Clicked(object sender, EventArgs e)
-        {
-            LocationMap.MapType = Xamarin.Forms.Maps.MapType.Hybrid;
         }
     }
 }

@@ -4,44 +4,20 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="WhereToSleep.Views.MapPage">
 
-        <Grid>
+    <Grid>
             <maps:Map x:Name="LocationMap" 
               HorizontalOptions="FillAndExpand"
               VerticalOptions="FillAndExpand"
               MapType="Hybrid"/>
 
-        <Button Text="Satellite" x:Name="Satellite"
-                Clicked="SatelliteButton_Clicked"  
-                WidthRequest="100" 
-                HeightRequest="50"
-                HorizontalOptions="StartAndExpand"
-                VerticalOptions="Start"
-                Margin="3,560,2,0">
-        </Button>
-
-        <Button Text="Standard" x:Name="Standard"
-                Clicked="StandardButton_Clicked"  
-                WidthRequest="100" 
-                HeightRequest="50"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Margin="3,560,50,0">
-        </Button>
-            
-        <Button Text="Hybrid" x:Name="Hybrid"
-                Clicked="HybridButton_Clicked"  
-                WidthRequest="100" 
-                HeightRequest="50"
-                HorizontalOptions="End"
-                VerticalOptions="End"
-                Margin="3,560,50,0">
+        <Button ImageSource="maptype_button" 
+                    Clicked="MapTypeButton_Clicked"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="10,450,50,0">
         </Button>
 
 
     </Grid>
- 
-    
-    
-    
-   
+
 </ContentPage>
