@@ -10,12 +10,14 @@
               VerticalOptions="FillAndExpand"
               MapType="Hybrid"/>
 
-        <Button ImageSource="maptype_button" 
-                    Clicked="MapTypeButton_Clicked"
-                    HorizontalOptions="End"
-                    VerticalOptions="End"
-                    Margin="10,450,50,0">
-        </Button>
+        <ImageButton
+            Source ="mapchangerr.png" 
+            Clicked="MapTypeButton_Clicked"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="10,470,55,15"
+            CornerRadius="50">
+        </ImageButton>
 
 
     </Grid>
