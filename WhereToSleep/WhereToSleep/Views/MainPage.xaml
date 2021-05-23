@@ -72,7 +72,8 @@
 
 
             <Grid>
-            <Button Text="Search" 
+            <Button Text="Booking" 
+                        Clicked="OpenBrowser"
                         BackgroundColor="#77D5E1"
                         TextColor="Black" 
                         HorizontalOptions="Fill" 

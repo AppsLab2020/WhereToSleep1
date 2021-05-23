@@ -122,5 +122,6 @@ namespace WhereToSleep.Views
             var span = new Xamarin.Forms.Maps.MapSpan(center, 1, 1);
             LocationMap.MoveToRegion(span);
         }
+                
     }
 }

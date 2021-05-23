@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Share;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -71,6 +72,9 @@ namespace WhereToSleep.Views
                                                 timeSpan.Days, timeSpan.Days == 1 ? "" : "s");
         }
 
-      
+        private void OpenBrowser(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
     }
 }
