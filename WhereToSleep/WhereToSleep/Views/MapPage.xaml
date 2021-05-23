@@ -10,7 +10,10 @@
               VerticalOptions="FillAndExpand"
               MapType="Hybrid"/>
 
+        
+        
         <ImageButton
+            
             Source ="mapchangerr.png" 
             Clicked="MapTypeButton_Clicked"
             HorizontalOptions="End"
