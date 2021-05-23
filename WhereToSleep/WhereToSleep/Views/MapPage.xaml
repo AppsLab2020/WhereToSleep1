@@ -2,24 +2,434 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             x:Class="WhereToSleep.Views.MapPage">
+             x:Class="WhereToSleep.Views.MapPage"
+             Title="Map" >
 
     <Grid>
-            <maps:Map x:Name="LocationMap" 
-              HorizontalOptions="FillAndExpand"
-              VerticalOptions="FillAndExpand"
-              MapType="Hybrid"/>
+        <maps:Map x:Name="LocationMap">
+            <x:Arguments>
+                <maps:MapSpan>
+                    <x:Arguments>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.13263045099855</x:Double>
+                                <x:Double>18.707620000970536</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                        <x:Double>0.01</x:Double>
+                        <x:Double>0.01</x:Double>
+                    </x:Arguments>
+                </maps:MapSpan>
+            </x:Arguments>
 
-        
-        
+
+            <maps:Map.Pins>
+                <maps:Pin Label="Penzion Relish"
+                          Address="Školská 25/38, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.12727907146193</x:Double>
+                                <x:Double>18.682083338488145</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Aphrodite"
+                          Address="Rajecká cesta, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.128930649748284</x:Double>
+                                <x:Double>18.682633917139224</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion Mlynárka"
+                          Address="64, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.130086886799546</x:Double>
+                                <x:Double>18.678490097364215</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Encián"
+                          Address="Osloboditeľov 90, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.1301360630115</x:Double>
+                                <x:Double>18.683234313551143</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Diplomat"
+                          Address="1. mája 14, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.12831246275363</x:Double>
+                                <x:Double>18.689156687005894</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion Villa"
+                          Address="Konská 551, 013 13 Rajecké Teplice"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.125583849327576</x:Double>
+                                <x:Double>18.674722487334</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hostinec u Hormadov"
+                          Address="430, 430, 013 15 Rajecká Lesná"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.04308093061983</x:Double>
+                                <x:Double>18.637436293987303</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion Rodus"
+                          Address="Rajecká Lesná 660, 013 15 Rajecká Lesná"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.04578944245049</x:Double>
+                                <x:Double>18.627694091643036</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Boss"
+                          Address="Čepiel 1, 010 01 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.2233984488473</x:Double>
+                                <x:Double>18.741897216842215</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Grand"
+                          Address="Na priekope 127/29, 010 01 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.224011240749924</x:Double>
+                                <x:Double>18.738360655667233</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Boutique Hotel Dubná Skala"
+                          Address="J. M. Hurbana 345/8, 010 01 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.22594384235841</x:Double>
+                                <x:Double>18.73937110171723</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel SLovan"
+                          Address="10, Andreja Kmeťa 658/2, 010 01 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.22726362441085</x:Double>
+                                <x:Double>18.740525897202936</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Holiday Inn"
+                          Address="Športová 2, 010 10 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.230467148682585</x:Double>
+                                <x:Double>18.742014024542488</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Galileo"
+                          Address="Hlinská 2584/25, 010 01 Žilina"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.208678687078084</x:Double>
+                                <x:Double>18.735176324796065</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion Anton"
+                          Address="Sv. Cyrila a Metoda, 013 01 Teplička nad Váhom"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.22805098265692</x:Double>
+                                <x:Double>18.790116656870072</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Hotel Diana"
+                          Address="Stráža 255, 013 04 Stráža"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.22494156577688</x:Double>
+                                <x:Double>18.907138949216115</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion V Starom Mlyne"
+                          Address="283/41,, SNP, 013 05 Belá"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.23895709072353</x:Double>
+                                <x:Double>18.94490786715843</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Village resort Hanuliak"
+                          Address="Oslobodenia 1071/118, 013 05 Belá"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.24287910033615</x:Double>
+                                <x:Double>18.953974121955724</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="Penzion Elizabetha"
+                          Address="Námestie Slobody 163, 024 01 Kysucké Nové Mesto"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+                <maps:Pin Label="hotel"
+                          Address="address"
+                          Type="Place">
+                    <maps:Pin.Position>
+                        <maps:Position>
+                            <x:Arguments>
+                                <x:Double>49.30554424187627</x:Double>
+                                <x:Double>18.788791359583257</x:Double>
+                            </x:Arguments>
+                        </maps:Position>
+                    </maps:Pin.Position>
+                </maps:Pin>
+
+
+
+            </maps:Map.Pins>
+            
+        </maps:Map>
+
         <ImageButton
             
             Source ="mapchangerr.png" 
             Clicked="MapTypeButton_Clicked"
-            HorizontalOptions="End"
-            VerticalOptions="End"
-            Margin="10,470,55,15"
-            CornerRadius="50">
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="50,10,10,10"
+            CornerRadius="50"
+            HeightRequest="50"
+            WidthRequest="50">
             
         </ImageButton>
 
