@@ -1,4 +1,5 @@
-﻿using Plugin.Share;
+﻿
+using Plugin.Share;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,6 +76,16 @@ namespace WhereToSleep.Views
         private void OpenBrowser(object sender, EventArgs e)
         {
             CrossShare.Current.OpenBrowser("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        }
+        List<string> pins = new List<string>
+        {
+            "auto", "vozik"
+        };
+
+        private void SearchButtonPressed(object sender, EventArgs e)
+        {
+            var searchpins = SearchButton.Text;
+            var suggestions = pins.Where(c => c.Contains(searchpins));
         }
     }
 }

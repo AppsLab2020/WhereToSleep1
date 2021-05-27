@@ -7,12 +7,13 @@
         <StackLayout  Spacing="10" Margin="0">
 
             <Grid>
-                <Image Source="header222.png" WidthRequest="360" HorizontalOptions="Start" VerticalOptions="Start" ></Image>
+                <Image Source="header222.png" WidthRequest="360" HorizontalOptions="Center" VerticalOptions="Start" ></Image>
             </Grid>
 
          
             
-            <SearchBar Placeholder="Search"
+            <SearchBar x:Name="SearchButton"
+                       Placeholder="Search"
                        CancelButtonColor="Black"
                        PlaceholderColor="Black"
                        TextColor="Black"
@@ -20,6 +21,7 @@
                        WidthRequest="100" 
                        Margin="15,2,15,2"
                        HorizontalTextAlignment="Center"
+                       SearchButtonPressed="SearchButtonPressed"
             />
 
             <Grid>  

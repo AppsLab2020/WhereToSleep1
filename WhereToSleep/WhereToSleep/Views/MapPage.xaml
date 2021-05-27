@@ -722,15 +722,27 @@
             
             Source ="mapchangerr.png" 
             Clicked="MapTypeButton_Clicked"
-            HorizontalOptions="Start"
+            HorizontalOptions="End"
             VerticalOptions="Start"
-            Margin="50,10,10,10"
+            Margin="100,60,10,10"
             CornerRadius="50"
-            HeightRequest="50"
-            WidthRequest="50">
+            HeightRequest="45"
+            WidthRequest="45">
             
         </ImageButton>
 
+        <SearchBar x:Name="SearchButton"
+                       Placeholder="Search"
+                       CancelButtonColor="Black"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       TextTransform="Lowercase"
+                       BackgroundColor="White"
+                       Margin="10,5,30,5"
+                       WidthRequest="290"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+            />
 
     </Grid>
 
