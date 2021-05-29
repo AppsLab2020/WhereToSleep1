@@ -50,6 +50,7 @@
                     </maps:Pin.Position>
                 </maps:Pin>
 
+                
                 <maps:Pin Label="Penzion Mlynárka"
                           Address="64, 013 13 Rajecké Teplice"
                           Type="Place">
@@ -63,6 +64,7 @@
                     </maps:Pin.Position>
                 </maps:Pin>
 
+                
                 <maps:Pin Label="Hotel Encián"
                           Address="Osloboditeľov 90, 013 13 Rajecké Teplice"
                           Type="Place">
