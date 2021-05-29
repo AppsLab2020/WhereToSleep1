@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WhereToSleep.Services;
+using WhereToSleep.Views;
 
 namespace WhereToSleep
 {
@@ -10,6 +12,7 @@ namespace WhereToSleep
         {
             InitializeComponent();
 
+            DependencyService.Register<Place>();
             MainPage = new AppShell();
         }
 

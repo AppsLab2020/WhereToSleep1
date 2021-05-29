@@ -3,11 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WhereToSleep.Views.FavoritesPage">
     <ContentPage.Content>
-        <Grid>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Margin="10">
+                <Label Text="Near me" TextColor="Blue" FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
 
-            
+            <CollectionView x:Name="myItem" SelectionMode="Single" SelectionChanged="myItem_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="1" BackgroundColor="AliceBlue">
+                            <Label Text="{Binding StallName}" Margin="100,0,0,0" TextColor="Black" FontAttributes="Bold" FontSize="15" />
+                            <Label Text="{Binding Description}" Margin="100,0,0,0" TextColor="Gray" FontAttributes="None" FontSize="10" />
+                            <Label Text="10 km" Margin="100,0,0,0" TextColor="Green" FontAttributes="None" FontSize="10" />
+                            <Frame BackgroundColor="White" HasShadow="True" Padding="2" Margin="0" HeightRequest="60" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+
+                                <StackLayout>
+                                    <Frame BackgroundColor="Blue" HasShadow="True" Padding="0" Margin="10,-130,10,0" HeightRequest="60" VerticalOptions="CenterAndExpand" WidthRequest="60" HorizontalOptions="Start">
+                                        <Image Source="{Binding ImageUrl}" Aspect="AspectFill"/>
+                                    </Frame>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
 
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
