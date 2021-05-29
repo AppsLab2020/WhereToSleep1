@@ -8,6 +8,7 @@ using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+using WhereToSleep.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,6 +22,7 @@ namespace WhereToSleep.Views
         public MapPage()
         {
             InitializeComponent();
+            BindingContext = new PinItemsViewModel();
 
             GetPermissions();
         }
