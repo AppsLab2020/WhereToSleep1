@@ -16,7 +16,7 @@
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-    <FlyoutItem Title="MainPage"
+    <FlyoutItem Title="Main Page"
                 Icon="home_icon2.png"
                 Route="MainPage">
         <Tab>
@@ -24,7 +24,7 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="MapPage"
+    <FlyoutItem Title="Map Page"
                 Icon="map_icon3.png"
                 Route="MapPage">
         <Tab>
@@ -32,11 +32,20 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="FavoritesPage"
+    <FlyoutItem Title="Near Me"
                 Icon="favourite_icon2.png"
                 Route="FavoritesPage">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:FavoritesPage}" />
         </Tab>
     </FlyoutItem>
+
+    <FlyoutItem Title="About us"
+                Icon="about.png"
+                Route="AboutPage">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </FlyoutItem>
+      
 </Shell>

@@ -21,7 +21,7 @@
                        WidthRequest="100" 
                        Margin="15,2,15,2"
                        HorizontalTextAlignment="Center"
-                       SearchButtonPressed="SearchButtonPressed"
+                       
             />
 
             <Grid>  

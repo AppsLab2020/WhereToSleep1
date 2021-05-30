@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WhereToSleep.Views.AboutPage"
+             Title="About us">
+
+    <ContentPage.Content>
+       
+            <StackLayout>
+
+            <Label Text="Where To Sleep App"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontFamily="Arial Rounded MT Bold"
+                FontSize="25"
+                FontAttributes="Bold"
+                TextColor="Black"
+                Margin="10,0,10,0"
+            />
+
+            <Label Text="This application was made only for school purposes."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center"
+                   Margin="10,0,10,0"
+            />
+             
+                
+
+            <Label Text="Language"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontFamily="Arial Rounded MT Bold"
+                FontSize="25"
+                FontAttributes="Bold"
+                TextColor="Black"
+                Margin="10,0,10,0"
+            />
+
+            <Label Text=" Is made in C# using Xamarin Forms."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center"
+                   Margin="10,0,10,0"
+            />
+
+
+            <Label Text="Goal / Function"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontFamily="Arial Rounded MT Bold"
+                FontSize="25"
+                FontAttributes="Bold"
+                TextColor="Black"
+                Margin="10,0,10,0"
+            />
+
+            <Label Text=" Its purpose is to search for nearby hotels, work with maps, pins, simple booking."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center"
+                   Margin="10,0,10,0"
+            />
+
+
+            <Image Source="footer.png"
+                VerticalOptions="End" 
+                HorizontalOptions="End"
+                WidthRequest="375" 
+            />
+
+        </StackLayout>
+     
+
+    </ContentPage.Content>
+      
+        
+</ContentPage>

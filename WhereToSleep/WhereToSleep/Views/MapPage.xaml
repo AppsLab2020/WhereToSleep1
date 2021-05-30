@@ -37,11 +37,11 @@
                        TextColor="Black"
                        TextTransform="Lowercase"
                        BackgroundColor="White"
-                       Margin="10,5,30,5"
-                       WidthRequest="290"
+                       Opacity="20"
+                       Margin="50,5,20,5"
+                       WidthRequest="247"
                        HorizontalOptions="Start"
-                       VerticalOptions="Start"
-            />
+                       VerticalOptions="Start" />
 
     </Grid>
 
