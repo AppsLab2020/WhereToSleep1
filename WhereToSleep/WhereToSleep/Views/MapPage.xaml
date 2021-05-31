@@ -19,14 +19,16 @@
 
         <ImageButton
             
-            Source ="mapchangerr.png" 
+            Source ="mppp.png" 
             Clicked="MapTypeButton_Clicked"
             HorizontalOptions="End"
             VerticalOptions="Start"
-            Margin="100,60,10,10"
-            CornerRadius="50"
+            Margin="100,60,10,10"                
+             BackgroundColor="Transparent"
+            CornerRadius="3"
             HeightRequest="45"
             WidthRequest="45">
+
             
         </ImageButton>
 
@@ -38,7 +40,7 @@
                        BackgroundColor="White"
                        Opacity="20"
                        Margin="50,5,0,5"
-                       WidthRequest="300"
+                       WidthRequest="250"
                        HorizontalOptions="Start"
                        VerticalOptions="Start" 
                        TextChanged="SearchButton_SearchButtonPressed"

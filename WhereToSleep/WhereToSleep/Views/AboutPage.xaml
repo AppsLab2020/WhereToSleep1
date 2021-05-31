@@ -15,7 +15,7 @@
                 FontSize="25"
                 FontAttributes="Bold"
                 TextColor="Black"
-                Margin="10,0,10,0"
+                Margin="10,0,10,10"
             />
 
             <Label Text="This application was made only for school purposes."
