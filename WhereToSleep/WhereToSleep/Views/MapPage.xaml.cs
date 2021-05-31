@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using WhereToSleep.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
 
 namespace WhereToSleep.Views
@@ -19,12 +21,14 @@ namespace WhereToSleep.Views
     public partial class MapPage : ContentPage
     {
         private bool hasLocationPermission = false;
+        private IList<Pin> allPins;
         public MapPage()
         {
             InitializeComponent();
             BindingContext = new PinItemsViewModel();
 
             GetPermissions();
+            allPins = new List<Pin>(LocationMap.Pins);
         }
         private async void GetPermissions()
         {
@@ -61,7 +65,7 @@ namespace WhereToSleep.Views
             }
         }
 
-            private async void MapTypeButton_Clicked(object sender, EventArgs e)
+        private async void MapTypeButton_Clicked(object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Select Map Type", "Cancel", null, "Hybrid", "Satellite", "Standard");
             switch (action)
@@ -76,7 +80,7 @@ namespace WhereToSleep.Views
                     LocationMap.MapType = Xamarin.Forms.Maps.MapType.Street;
                     break;
             }
-                
+
 
         }
         protected override async void OnAppearing()
@@ -92,6 +96,7 @@ namespace WhereToSleep.Views
             }
 
             GetLocation();
+           
         }
 
         protected override void OnDisappearing()
@@ -118,12 +123,29 @@ namespace WhereToSleep.Views
             }
         }
 
-        private void MoveMap(Position position)
+        private void MoveMap(Plugin.Geolocator.Abstractions.Position position)
         {
             var center = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
             var span = new Xamarin.Forms.Maps.MapSpan(center, 1, 1);
             LocationMap.MoveToRegion(span);
         }
-                
+        
+
+        private void SearchButton_SearchButtonPressed(object sender, EventArgs e)
+        {
+            var foundPlaces = new List<Pin>();
+            foreach (var pin in allPins)
+            {
+                if (pin.Label.ToLower().Contains(SearchButton.Text.ToLower()))
+                {
+                    foundPlaces.Add(pin);
+                }
+            }
+            LocationMap.Pins.Clear();
+            foreach (var pin in foundPlaces)
+            {
+                LocationMap.Pins.Add(pin);
+            }
+        }
     }
 }

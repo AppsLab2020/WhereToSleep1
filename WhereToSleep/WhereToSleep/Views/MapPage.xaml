@@ -34,14 +34,16 @@
                        Placeholder="Search"
                        CancelButtonColor="Black"
                        PlaceholderColor="Black"
-                       TextColor="Black"
-                       TextTransform="Lowercase"
+                       TextColor="Black"                     
                        BackgroundColor="White"
                        Opacity="20"
-                       Margin="50,5,20,5"
-                       WidthRequest="247"
+                       Margin="50,5,0,5"
+                       WidthRequest="300"
                        HorizontalOptions="Start"
-                       VerticalOptions="Start" />
+                       VerticalOptions="Start" 
+                       TextChanged="SearchButton_SearchButtonPressed"
+                       />
+        
 
     </Grid>
 
